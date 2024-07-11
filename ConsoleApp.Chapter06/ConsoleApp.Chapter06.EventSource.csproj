@@ -1,0 +1,1438 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Windows.EventTracing.Processing.All" Version="1.12.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.outputredirection\1.12.10\build\x86\NativeOutputRedirector.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x86\wpt\symsrv.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x86\wpt\symcache.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x86\wpt\perf_wpr.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x86\wpt\perf_wpp.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x86\wpt\perf_wininet.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x86\wpt\perf_utc.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x86\wpt\perf_tdh.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x86\wpt\perf_regions.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x86\wpt\perf_ppm.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x86\wpt\perf_pool.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x86\wpt\perf_pofx.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x86\wpt\perf_pmc.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x86\wpt\perf_pep.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x86\wpt\perf_onoff.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x86\wpt\perf_nt_g.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x86\wpt\perf_nt.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x86\wpt\perf_memory.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x86\wpt\perf_heapsnapshot.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x86\wpt\perf_frames.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x86\wpt\perf_e3.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x86\wpt\perf_dynamic.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x86\wpt\perfg.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x86\wpt\perfcore.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x86\wpt\msdia140.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.outputredirection\1.12.10\build\ARM64\NativeOutputRedirector.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm64\wpt\symsrv.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm64\wpt\symcache.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm64\wpt\perf_wpr.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm64\wpt\perf_wpp.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm64\wpt\perf_wininet.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm64\wpt\perf_utc.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm64\wpt\perf_tdh.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm64\wpt\perf_regions.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm64\wpt\perf_ppm.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm64\wpt\perf_pool.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm64\wpt\perf_pofx.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm64\wpt\perf_pmc.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm64\wpt\perf_pep.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm64\wpt\perf_onoff.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm64\wpt\perf_nt_g.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm64\wpt\perf_nt.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm64\wpt\perf_memory.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm64\wpt\perf_heapsnapshot.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm64\wpt\perf_frames.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm64\wpt\perf_e3.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm64\wpt\perf_dynamic.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm64\wpt\perfg.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm64\wpt\perfcore.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm64\wpt\msdia140.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.outputredirection\1.12.10\build\ARM\NativeOutputRedirector.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm\wpt\symsrv.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm\wpt\symcache.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm\wpt\perf_wpr.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm\wpt\perf_wpp.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm\wpt\perf_wininet.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm\wpt\perf_utc.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm\wpt\perf_tdh.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm\wpt\perf_regions.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm\wpt\perf_ppm.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm\wpt\perf_pool.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm\wpt\perf_pofx.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm\wpt\perf_pmc.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm\wpt\perf_pep.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm\wpt\perf_onoff.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm\wpt\perf_nt_g.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm\wpt\perf_nt.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm\wpt\perf_memory.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm\wpt\perf_heapsnapshot.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm\wpt\perf_frames.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm\wpt\perf_e3.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm\wpt\perf_dynamic.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm\wpt\perfg.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm\wpt\perfcore.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\arm\wpt\msdia140.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.outputredirection\1.12.10\build\x64\NativeOutputRedirector.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x64\wpt\symsrv.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x64\wpt\symcache.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x64\wpt\perf_wpr.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x64\wpt\perf_wpp.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x64\wpt\perf_wininet.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x64\wpt\perf_utc.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x64\wpt\perf_tdh.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x64\wpt\perf_regions.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x64\wpt\perf_ppm.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x64\wpt\perf_pool.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x64\wpt\perf_pofx.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x64\wpt\perf_pmc.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x64\wpt\perf_pep.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x64\wpt\perf_onoff.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x64\wpt\perf_nt_g.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x64\wpt\perf_nt.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x64\wpt\perf_memory.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x64\wpt\perf_heapsnapshot.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x64\wpt\perf_frames.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x64\wpt\perf_e3.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x64\wpt\perf_dynamic.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x64\wpt\perfg.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x64\wpt\perfcore.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\x64\wpt\msdia140.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\scenario.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\scenario.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\scenario.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\scenario.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Standby.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Standby.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Standby.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Standby.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Mobile.Shutdown.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Mobile.Shutdown.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Mobile.Shutdown.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Mobile.Shutdown.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Mobile.Boot.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Mobile.Boot.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Mobile.Boot.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Mobile.Boot.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Logon.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Logon.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Logon.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Logon.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\HyperV.VM.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\HyperV.VM.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\HyperV.VM.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\HyperV.VM.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Hibernate.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Hibernate.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Hibernate.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Hibernate.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FullBoot.Shutdown.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FullBoot.Shutdown.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FullBoot.Shutdown.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FullBoot.Shutdown.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FullBoot.Boot.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FullBoot.Boot.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FullBoot.Boot.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FullBoot.Boot.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FastStartup.Win8.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FastStartup.Win8.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FastStartup.Win8.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FastStartup.Win8.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FastStartup.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FastStartup.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FastStartup.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FastStartup.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\DotNETRuntime.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\DotNETRuntime.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\DotNETRuntime.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\DotNETRuntime.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\default.stacktags" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\default.stacktags" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\default.stacktags" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\default.stacktags" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\ConnectedStandby.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\ConnectedStandby.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\ConnectedStandby.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\ConnectedStandby.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\AppLaunch.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\AppLaunch.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\AppLaunch.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\AppLaunch.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\AppAnalysis.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\AppAnalysis.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\AppAnalysis.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\AppAnalysis.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\scenario.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\scenario.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\scenario.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\scenario.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Standby.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Standby.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Standby.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Standby.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Mobile.Shutdown.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Mobile.Shutdown.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Mobile.Shutdown.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Mobile.Shutdown.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Mobile.Boot.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Mobile.Boot.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Mobile.Boot.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Mobile.Boot.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Logon.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Logon.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Logon.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Logon.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\HyperV.VM.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\HyperV.VM.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\HyperV.VM.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\HyperV.VM.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Hibernate.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Hibernate.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Hibernate.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Hibernate.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FullBoot.Shutdown.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FullBoot.Shutdown.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FullBoot.Shutdown.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FullBoot.Shutdown.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FullBoot.Boot.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FullBoot.Boot.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FullBoot.Boot.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FullBoot.Boot.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FastStartup.Win8.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FastStartup.Win8.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FastStartup.Win8.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FastStartup.Win8.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FastStartup.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FastStartup.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FastStartup.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FastStartup.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\DotNETRuntime.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\DotNETRuntime.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\DotNETRuntime.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\DotNETRuntime.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\default.stacktags" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\default.stacktags" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\default.stacktags" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\default.stacktags" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\ConnectedStandby.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\ConnectedStandby.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\ConnectedStandby.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\ConnectedStandby.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\AppLaunch.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\AppLaunch.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\AppLaunch.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\AppLaunch.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\AppAnalysis.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\AppAnalysis.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\AppAnalysis.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\AppAnalysis.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\scenario.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\scenario.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\scenario.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\scenario.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Standby.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Standby.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Standby.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Standby.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Mobile.Shutdown.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Mobile.Shutdown.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Mobile.Shutdown.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Mobile.Shutdown.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Mobile.Boot.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Mobile.Boot.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Mobile.Boot.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Mobile.Boot.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Logon.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Logon.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Logon.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Logon.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\HyperV.VM.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\HyperV.VM.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\HyperV.VM.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\HyperV.VM.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Hibernate.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Hibernate.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Hibernate.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Hibernate.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FullBoot.Shutdown.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FullBoot.Shutdown.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FullBoot.Shutdown.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FullBoot.Shutdown.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FullBoot.Boot.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FullBoot.Boot.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FullBoot.Boot.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FullBoot.Boot.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FastStartup.Win8.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FastStartup.Win8.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FastStartup.Win8.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FastStartup.Win8.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FastStartup.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FastStartup.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FastStartup.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FastStartup.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\DotNETRuntime.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\DotNETRuntime.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\DotNETRuntime.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\DotNETRuntime.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\default.stacktags" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\default.stacktags" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\default.stacktags" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\default.stacktags" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\ConnectedStandby.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\ConnectedStandby.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\ConnectedStandby.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\ConnectedStandby.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\AppLaunch.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\AppLaunch.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\AppLaunch.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\AppLaunch.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\AppAnalysis.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\AppAnalysis.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\AppAnalysis.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\AppAnalysis.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\scenario.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\scenario.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\scenario.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\scenario.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Standby.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Standby.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Standby.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Standby.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Mobile.Shutdown.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Mobile.Shutdown.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Mobile.Shutdown.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Mobile.Shutdown.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Mobile.Boot.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Mobile.Boot.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Mobile.Boot.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Mobile.Boot.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Logon.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Logon.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Logon.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Logon.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\HyperV.VM.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\HyperV.VM.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\HyperV.VM.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\HyperV.VM.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Hibernate.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Hibernate.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Hibernate.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\Hibernate.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FullBoot.Shutdown.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FullBoot.Shutdown.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FullBoot.Shutdown.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FullBoot.Shutdown.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FullBoot.Boot.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FullBoot.Boot.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FullBoot.Boot.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FullBoot.Boot.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FastStartup.Win8.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FastStartup.Win8.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FastStartup.Win8.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FastStartup.Win8.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FastStartup.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FastStartup.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FastStartup.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\FastStartup.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\DotNETRuntime.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\DotNETRuntime.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\DotNETRuntime.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\DotNETRuntime.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\default.stacktags" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\default.stacktags" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\default.stacktags" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\default.stacktags" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\ConnectedStandby.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\ConnectedStandby.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\ConnectedStandby.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\ConnectedStandby.Regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\AppLaunch.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\AppLaunch.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\AppLaunch.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\AppLaunch.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\AppAnalysis.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\AppAnalysis.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\AppAnalysis.regions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\brani\.nuget\packages\microsoft.windows.eventtracing.processing.toolkit\1.11.0\build\any\wpt\Catalog\AppAnalysis.regions.xml" />
+  </ItemGroup>
+
+</Project>
