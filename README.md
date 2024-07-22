@@ -51,8 +51,10 @@ With the following software and hardware list you can run all code files present
 
 ## Get to Know the Author
 **Trevoir Williams**
-a passionate soft ware and system engineer from Jamaica, shares his extensive knowledge with students worldwide. Holding a Master’s degree in Computer Science with a focus on Software Development and multiple Microsoft Azure Certifi cations, his educational background is robust.
+a passionate software and system engineer from Jamaica, shares his extensive knowledge with students worldwide. Holding a Master’s degree in Computer Science with a focus on Software Development and multiple Microsoft Azure Certifi cations, his educational background is robust.
+
 His diverse experience includes soft ware consulting, engineering, database development, cloud systems, server administration, and lecturing, refl ecting his commitment to technological excellence and education. He is also a talented musician, showcasing his versatility.
+
 He has penned works like Microservices Design Patterns in .NET and Azure Integration Guide for Business. His practical approach to teaching helps students grasp both theory and real-world applications.
 
 ## Other Books by the Author
